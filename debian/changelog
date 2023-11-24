@@ -1,3 +1,37 @@
+lame (3.100-6) unstable; urgency=medium
+
+  * Team upload
+  * Fix pkg-config description to encoder
+
+ -- Benjamin Drung <bdrung@debian.org>  Wed, 28 Sep 2022 10:44:50 +0200
+
+lame (3.100-5) unstable; urgency=medium
+
+  * Team upload
+  * Rename pkg-config file to lame.pc to match the name from Arch Linux
+
+ -- Benjamin Drung <bdrung@debian.org>  Tue, 27 Sep 2022 20:22:37 +0200
+
+lame (3.100-4) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Archive, Repository.
+  * Apply multi-arch hints. + lame-doc: Add Multi-Arch: foreign.
+  * Update standards version to 4.5.1, no changes needed.
+  * Avoid explicitly specifying -Wl,--as-needed linker flag.
+
+  [ Nicolas Boulenguez ]
+  * Generate and install a pkg-config file for user convenience
+    (Closes: #829326)
+
+  [ Benjamin Drung ]
+  * Update standards version to 4.6.1, no changes needed.
+  * Switch to debhelper 13
+
+ -- Benjamin Drung <bdrung@debian.org>  Tue, 20 Sep 2022 13:52:56 +0200
+
 lame (3.100-3) unstable; urgency=medium
 
   [ Ondřej Nový ]
