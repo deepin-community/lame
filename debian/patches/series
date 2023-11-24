@@ -3,3 +3,4 @@ privacy-breach.patch
 msse.patch
 spelling-error-in-binary.patch
 spelling-error-in-manpage.patch
+pkg-config.patch

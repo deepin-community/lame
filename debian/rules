@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed -Wl,--no-undefined
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--no-undefined
 
 %:
 	dh $@
@@ -12,3 +12,7 @@ override_dh_auto_configure:
 		--enable-dynamic-frontends \
 		--enable-nasm \
 		--with-fileio=sndfile
+
+override_dh_auto_install:
+	dh_auto_install
+	find debian/tmp/ -type f -name '*.la' | xargs rm -f
