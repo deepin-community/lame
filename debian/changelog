@@ -1,3 +1,9 @@
+lame (3.100-7) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Thu, 10 Sep 2026 18:00:19 +0800
+
 lame (3.100-6) unstable; urgency=medium
 
   * Team upload
